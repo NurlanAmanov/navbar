@@ -15,17 +15,19 @@ header {
     width: 100%;
     background: #303030;
 }
-#search{
+
+#search {
     padding: 10px 10px;
     display: flex;
 }
+
 #search2 {
     display: inline-block;
     height: 40px;
     border-radius: 5px 5px;
 }
 
-button { 
+button {
     display: block;
     font: 1em 'Verdana';
     align-items: center;
@@ -37,33 +39,37 @@ button {
     border: none;
 }
 
+#nav2 {
+    display: flex;
+    flex-direction: column;
+
+}
+
 nav {
     display: flex;
     justify-content: space-between;
-
 }
 
 #menu {
     list-style: none;
-    
-  
     padding: 10px 10px;
+    
 }
 
 li a {
-    
     display: flex;
+    transition: .2s ease;
     padding: 10px 10px;
     color: #fff;
     text-decoration: none;
-
 }
-a:hover{
+
+a:hover {
     background: yellow;
     color: black;
     border-radius: 10px 10px;
-    border:none;
-    transition: .1s;
+    border: none;
+    t
 }
 
 label {
@@ -94,26 +100,28 @@ label {
 
     #menu {
         display: flex;
-      
     }
 
     nav {
         display: flex;
         justify-content: space-between;
     }
-    #search{
+
+    #search {
         display: flex;
     }
+
     #search2 {
-    display: inline-block;
-    height: 50px;
-    border-radius: 5px 5px;}
+        display: inline-block;
+        height: 50px;
+        border-radius: 5px 5px;
+    }
+
     li a {
         font-family: Arial, Helvetica, sans-serif;
         display: flex;
         padding: 10px;
         margin: 0 10px;
-
         transition: .2s;
     }
 

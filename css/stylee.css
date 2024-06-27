@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"]:checked~ul {
+    display: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    width: 100%;
+    background: #303030;
+}
+#search{
+    padding: 10px 10px;
+    display: flex;
+}
+#search2 {
+    display: inline-block;
+    height: 40px;
+    border-radius: 5px 5px;
+}
+
+button { 
+    display: block;
+    font: 1em 'Verdana';
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 40px;
+    color: #fff;
+    background: #65A992;
+    border: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#menu {
+    list-style: none;
+    
+  
+    padding: 10px 10px;
+}
+
+li a {
+    
+    display: flex;
+    padding: 10px 10px;
+    color: #fff;
+    text-decoration: none;
+
+}
+a:hover{
+    background: yellow;
+    color: black;
+    border-radius: 10px 10px;
+    border:none;
+    transition: .1s;
+}
+
+label {
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+    display: flex;
+    padding: 10px 10px;
+    margin: 10px 10px;
+}
+
+#burger {
+    display: none;
+}
+
+.main1 {
+    margin: 10px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Desktop version */
+@media only screen and (min-width: 768px) {
+
+    label {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+      
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    #search{
+        display: flex;
+    }
+    #search2 {
+    display: inline-block;
+    height: 50px;
+    border-radius: 5px 5px;}
+    li a {
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        padding: 10px;
+        margin: 0 10px;
+
+        transition: .2s;
+    }
+
+    button {
+        font: 1em 'Verdana';
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100px;
+        height: 50px;
+        color: #fff;
+        background: #65A992;
+        border: none;
+    }
+
+    a:hover {
+        background: rgb(0, 102, 255);
+        border-radius: 10px 10px;
+    }
+
+    button:hover {
+        background: orange;
+        transition: .3s;
+    }
+}
